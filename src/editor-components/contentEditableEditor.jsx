@@ -78,6 +78,11 @@ export default class ContentEditableEditor extends BaseEditor {
      * @i18n {en-US} Defines the char sequence upon which to trigger querying the data source
      */
     delimiter: PropTypes.string,
+    /**
+     * @i18n {zh-CN} 最大长度
+     * @i18n {en-US} max length of content
+     */
+    maxLength: PropTypes.number,
   };
   static defaultProps = {
     prefixCls: '',
@@ -90,6 +95,7 @@ export default class ContentEditableEditor extends BaseEditor {
     defaultValue: '',
     readOnly: false,
     delimiter: '@',
+    maxLength: -1,
   };
 
   constructor(props) {
@@ -97,6 +103,7 @@ export default class ContentEditableEditor extends BaseEditor {
     this.state = {
       focus: false,
       value: props.value || props.defaultValue,
+      readOnly: this.props.readOnly,
     };
   }
   componentDidMount() {
@@ -237,6 +244,10 @@ export default class ContentEditableEditor extends BaseEditor {
     return content;
   }
   emitChange(e) {
+    if (this.emitFromMaxLength) {
+      this.emitFromMaxLength = false;
+      return;
+    }
     if (!this.observer) {
       const editor = this.editor;
 
@@ -249,13 +260,25 @@ export default class ContentEditableEditor extends BaseEditor {
       this.lastHtml = currentHtml;
     }
     const content = this.extractContent();
+    const value = this.props.maxLength > 0
+      ? content.substring(0, this.props.maxLength)
+      : content;
     this.setState({
-      value: content,
+      value,
     });
-    this.props.onChange(e, content);
+    if (this.props.maxLength > 0 && content.length > this.props.maxLength) {
+      this.editor.innerHTML = value;
+      this.emitFromMaxLength = true;
+      // 焦点问题太难hack，所以通过设置readOnly来禁止用户输入
+      this.setState({ readOnly: true }, () => {
+        this.setState({ readOnly: false });
+      });
+    }
+    this.props.onChange(e, value);
   }
   render() {
-    const { readOnly, placeholder } = this.props;
+    const { placeholder } = this.props;
+    const { readOnly } = this.state;
     const style = {
       width: this.props.width,
       height: this.props.height,
