@@ -269,10 +269,8 @@ export default class ContentEditableEditor extends BaseEditor {
     if (this.props.maxLength > 0 && content.length > this.props.maxLength) {
       this.editor.innerHTML = value;
       this.emitFromMaxLength = true;
-      // 焦点问题太难hack，所以通过设置readOnly来禁止用户输入
-      this.setState({ readOnly: true }, () => {
-        this.setState({ readOnly: false });
-      });
+      // 焦点问题太难hack，所以通过移除焦点来禁止用户输入
+      this.editor.blur();
     }
     this.props.onChange(e, value);
   }
