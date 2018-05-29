@@ -20,24 +20,24 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">19.11% </span>
+        <span class="strong">21.84% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>56/293</span>
+        <span class='fraction'>64/293</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">5.96% </span>
+        <span class="strong">9.93% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>9/151</span>
+        <span class='fraction'>15/151</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">12.5% </span>
+        <span class="strong">17.5% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>5/40</span>
+        <span class='fraction'>7/40</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">19.31% </span>
+        <span class="strong">22.07% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>56/290</span>
+        <span class='fraction'>64/290</span>
       </div>
     </div>
   </div>
@@ -882,7 +882,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1×</span>
 <span class="cline-any cline-yes">1×</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">5×</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1×</span>
 <span class="cline-any cline-yes">1×</span>
@@ -894,24 +894,24 @@
 <span class="cline-any cline-yes">1×</span>
 <span class="cline-any cline-yes">1×</span>
 <span class="cline-any cline-yes">2×</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">5×</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-yes">5×</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-yes">5×</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-yes">5×</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -1051,7 +1051,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">'use strict';
 &nbsp;
-var _typeof = typeof Symbol === "function" &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >typeof Symbol.iterator === "symbol" </span>? <span class="fstat-no" title="function not covered" ><span class="branch-0 cbranch-no" title="branch not covered" >function (obj) {</span> <span class="cstat-no" title="statement not covered" >return typeof obj; </span>} </span>: <span class="fstat-no" title="function not covered" >function (obj) {</span> <span class="cstat-no" title="statement not covered" >return obj &amp;&amp; typeof Symbol === "function" &amp;&amp; obj.constructor === Symbol &amp;&amp; obj !== Symbol.prototype ? "symbol" : typeof obj; </span>};
+var _typeof = typeof Symbol === "function" &amp;&amp; typeof Symbol.iterator === "symbol" ? <span class="fstat-no" title="function not covered" >function (obj) {</span> <span class="cstat-no" title="statement not covered" >return typeof obj; </span>} : <span class="fstat-no" title="function not covered" ><span class="branch-1 cbranch-no" title="branch not covered" >function (obj) {</span> <span class="cstat-no" title="statement not covered" >return obj &amp;&amp; typeof Symbol === "function" &amp;&amp; obj.constructor === Symbol &amp;&amp; obj !== Symbol.prototype ? "symbol" : typeof obj; </span>};</span>
 &nbsp;
 /**
  * Position module for Rangy.
@@ -1384,8 +1384,8 @@ var _typeof = typeof Symbol === "function" &amp;&amp; <span class="branch-1 cbra
 <span class="cstat-no" title="statement not covered" >        return adjustClientRect(rect, dom.getDocument(this.startContainer));</span>
       };
     } else <span class="missing-if-branch" title="else path not taken" >E</span>if (api.features.implementsDomRange) {
-      var createWrappedRange = <span class="fstat-no" title="function not covered" >function createWrappedRange(range) {</span>
-<span class="cstat-no" title="statement not covered" >        return range instanceof WrappedRange ? range : new WrappedRange(range);</span>
+      var createWrappedRange = function createWrappedRange(range) {
+        return range instanceof WrappedRange ? range : <span class="branch-1 cbranch-no" title="branch not covered" >new WrappedRange(range);</span>
       };
       <span class="missing-if-branch" title="else path not taken" >E</span>if (rangeSupportsGetBoundingClientRect) {
         rangeProto.getBoundingClientRect = <span class="fstat-no" title="function not covered" >function () {</span>
@@ -1396,11 +1396,11 @@ var _typeof = typeof Symbol === "function" &amp;&amp; <span class="branch-1 cbra
         };
         <span class="missing-if-branch" title="else path not taken" >E</span>if (rangeSupportsGetClientRects) {
           createClientBoundaryPosGetter = function createClientBoundaryPosGetter(isStart) {
-            return <span class="fstat-no" title="function not covered" >function () {</span>
-<span class="cstat-no" title="statement not covered" >              var rect,</span>
+            return function () {
+              var rect,
                   nativeRange = createWrappedRange(this).nativeRange;
-<span class="cstat-no" title="statement not covered" >              var rects = nativeRange.getClientRects();</span>
-<span class="cstat-no" title="statement not covered" >              if (rects.length === 0 &amp;&amp; elementSupportsGetBoundingClientRect) {</span>
+              var rects = nativeRange.getClientRects();
+              <span class="missing-if-branch" title="if path not taken" >I</span>if (rects.length === 0 &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >elementSupportsGetBoundingClientRect)</span> {
 <span class="cstat-no" title="statement not covered" >                if (this.collapsed &amp;&amp; this.startContainer.nodeType === 1 &amp;&amp; this.startOffset &lt; this.startContainer.childNodes.length) {</span>
 <span class="cstat-no" title="statement not covered" >                  var n = this.startContainer.childNodes[this.startOffset];</span>
 <span class="cstat-no" title="statement not covered" >                  if (n.getClientRects) {</span>
@@ -1408,13 +1408,13 @@ var _typeof = typeof Symbol === "function" &amp;&amp; <span class="branch-1 cbra
                   }
                 }
               }
-<span class="cstat-no" title="statement not covered" >              if (rects.length &gt; 0) {</span>
-<span class="cstat-no" title="statement not covered" >                if (isStart) {</span>
+              <span class="missing-if-branch" title="else path not taken" >E</span>if (rects.length &gt; 0) {
+                <span class="missing-if-branch" title="if path not taken" >I</span>if (isStart) {
 <span class="cstat-no" title="statement not covered" >                  rect = rects[0];</span>
 <span class="cstat-no" title="statement not covered" >                  return { x: rect.left, y: rect.top };</span>
                 } else {
-<span class="cstat-no" title="statement not covered" >                  rect = rects[rects.length - 1];</span>
-<span class="cstat-no" title="statement not covered" >                  return { x: rect.right, y: rect.bottom };</span>
+                  rect = rects[rects.length - 1];
+                  return { x: rect.right, y: rect.bottom };
                 }
               } else {
 <span class="cstat-no" title="statement not covered" >                throw module.createError('Cannot get position for range ' + this.inspect());</span>
@@ -1558,7 +1558,7 @@ var _typeof = typeof Symbol === "function" &amp;&amp; <span class="branch-1 cbra
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Mon Jul 31 2017 16:18:18 GMT+0800 (CST)
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue May 29 2018 17:37:41 GMT+0800 (CST)
 </div>
 </div>
 <script src="../../prettify.js"></script>

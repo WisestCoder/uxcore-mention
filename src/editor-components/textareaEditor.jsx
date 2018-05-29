@@ -69,6 +69,11 @@ export default class TextareaEditor extends BaseEditor {
      * @i18n {en-US} Defines the char sequence upon which to trigger querying the data source
      */
     delimiter: PropTypes.string,
+    /**
+     * @i18n {zh-CN} 最大长度
+     * @i18n {en-US} max length of content
+     */
+    maxLength: PropTypes.number,
   };
   static defaultProps = {
     prefixCls: '',
@@ -82,6 +87,7 @@ export default class TextareaEditor extends BaseEditor {
     readOnly: false,
     delimiter: '@',
     value: '',
+    maxLength: -1,
   };
 
   constructor(props) {
@@ -165,7 +171,7 @@ export default class TextareaEditor extends BaseEditor {
   }
   render() {
     const { value } = this.state;
-    const { readOnly, placeholder } = this.props;
+    const { readOnly, placeholder, maxLength } = this.props;
     let style = {
       width: this.props.width,
       height: this.props.height,
@@ -173,6 +179,7 @@ export default class TextareaEditor extends BaseEditor {
     return (
       <div className={this.props.prefixCls}>
         <textarea
+          {...(Number(maxLength) > 0 ? { maxLength } : {})}
           ref={el => (this.editor = el)}
           className={`${this.props.prefixCls}-editor kuma-textarea`}
           style={style}

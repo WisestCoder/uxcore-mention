@@ -47,6 +47,7 @@ const mentionProps = {
 
 const editorProps = {
   defaultValue: 'defaultContent',
+  maxLength: 10,
 };
 
 
@@ -151,6 +152,15 @@ describe('Mention', () => {
         }, 100);
       }, 100);
     });
+    it('should be limited by maxLength', done => {
+      input.simulate('change', { target: { value: 'a1a1a1a1a1' } });
+      input.simulate('keydown', { keyCode: 65 });
+      setTimeout(() => {
+        expect(input.instance().value).to.have.length(10);
+        expect(input.instance().value).to.be('a1a1a1a1a1');
+        done();
+      }, 100);
+    });
   });
 
   describe('TextareaEditor', () => {
@@ -251,6 +261,15 @@ describe('Mention', () => {
       textareaEditor.instance().insert('test');
       setTimeout(() => {
         expect(textarea.instance().value).to.be('testdefaultContent');
+        done();
+      }, 100);
+    });
+    it('should be limited by maxLength', done => {
+      textarea.simulate('change', { target: { value: 'a1a1a1a1a1' } });
+      textarea.simulate('keydown', { keyCode: 65 });
+      setTimeout(() => {
+        expect(textarea.instance().value).to.have.length(10);
+        expect(textarea.instance().value).to.be('a1a1a1a1a1');
         done();
       }, 100);
     });
@@ -437,6 +456,15 @@ describe('Mention', () => {
           expect(contentEditableEditor.editor.innerHTML).to.be('<input type="button" tabindex="-1" class="kuma-mention-node" value="@aabbb">');
           done();
         }, 100);
+      }, 100);
+    });
+    it('should be limited by maxLength', done => {
+      contentEditableEditor.editor.innerHTML = 'a1a1a1a1a1';
+      Simulate.keyDown(contentEditableEditor.editor, { keyCode: 65 });
+      setTimeout(() => {
+        expect(contentEditableEditor.editor.innerHTML).to.have.length(10);
+        expect(contentEditableEditor.editor.innerHTML).to.be('a1a1a1a1a1');
+        done();
       }, 100);
     });
   });

@@ -1,0 +1,1193 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/components/TinymceMention.jsx</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">all files</a> / <a href="index.html">src/components/</a> TinymceMention.jsx
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">89.02% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>154/173</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">58.21% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>39/67</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">86.67% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>26/30</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">94.19% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>146/155</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+248
+249
+250
+251
+252
+253
+254
+255
+256
+257
+258
+259
+260
+261
+262
+263
+264
+265
+266
+267
+268
+269
+270
+271
+272
+273
+274
+275
+276
+277
+278
+279
+280
+281
+282
+283
+284
+285
+286
+287
+288
+289
+290
+291
+292
+293
+294
+295
+296
+297
+298
+299
+300
+301
+302
+303
+304
+305
+306
+307
+308
+309
+310
+311
+312
+313
+314
+315
+316
+317
+318
+319
+320
+321
+322
+323
+324
+325
+326
+327
+328
+329
+330
+331
+332
+333
+334
+335
+336
+337
+338
+339
+340
+341
+342
+343
+344
+345
+346
+347
+348
+349
+350
+351
+352
+353
+354
+355
+356
+357
+358
+359
+360
+361
+362
+363
+364
+365
+366
+367
+368
+369
+370
+371
+372
+373
+374
+375
+376
+377</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">17×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">17×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">17×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">17×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">33×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">28×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">'use strict';
+&nbsp;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+&nbsp;
+var _react = require('react');
+&nbsp;
+var _react2 = _interopRequireDefault(_react);
+&nbsp;
+var _reactDom = require('react-dom');
+&nbsp;
+var _propTypes = require('prop-types');
+&nbsp;
+var _propTypes2 = _interopRequireDefault(_propTypes);
+&nbsp;
+var _reactMixin = require('react-mixin');
+&nbsp;
+var _reactMixin2 = _interopRequireDefault(_reactMixin);
+&nbsp;
+var _Panel = require('./Panel');
+&nbsp;
+var _Panel2 = _interopRequireDefault(_Panel);
+&nbsp;
+var _baseEditor = require('../editor-components/baseEditor');
+&nbsp;
+var _baseEditor2 = _interopRequireDefault(_baseEditor);
+&nbsp;
+var _keycode = require('../utils/keycode');
+&nbsp;
+var _util = require('../utils/util');
+&nbsp;
+var _mentionMixin = require('./mentionMixin');
+&nbsp;
+var _mentionMixin2 = _interopRequireDefault(_mentionMixin);
+&nbsp;
+function _interopRequireDefault(obj) { return obj &amp;&amp; obj.__esModule ? <span class="branch-0 cbranch-no" title="branch not covered" >obj </span>: { 'default': obj }; }
+&nbsp;
+<span class="fstat-no" title="function not covered" >function _defaults(obj, defaults) {</span> <span class="cstat-no" title="statement not covered" >var keys = Object.getOwnPropertyNames(defaults); <span class="cstat-no" title="statement not covered" ></span>for (var i = 0; i &lt; keys.length; i++) { <span class="cstat-no" title="statement not covered" >var key = keys[i]; <span class="cstat-no" title="statement not covered" ></span>var value = Object.getOwnPropertyDescriptor(defaults, key); <span class="cstat-no" title="statement not covered" ></span>if (value &amp;&amp; value.configurable &amp;&amp; obj[key] === undefined) { <span class="cstat-no" title="statement not covered" >Object.defineProperty(obj, key, value); </span>} </span>} <span class="cstat-no" title="statement not covered" ></span>return obj; </span>}
+&nbsp;
+function _classCallCheck(instance, Constructor) { <span class="missing-if-branch" title="if path not taken" >I</span>if (!(instance instanceof Constructor)) { <span class="cstat-no" title="statement not covered" >throw new TypeError("Cannot call a class as a function"); </span>} }
+&nbsp;
+function _possibleConstructorReturn(self, call) { <span class="missing-if-branch" title="if path not taken" >I</span>if (!self) { <span class="cstat-no" title="statement not covered" >throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); </span>} return call &amp;&amp; (typeof call === "object" || <span class="branch-2 cbranch-no" title="branch not covered" >typeof call === "function")</span> ? call : <span class="branch-1 cbranch-no" title="branch not covered" >self;</span> }
+&nbsp;
+function _inherits(subClass, superClass) { <span class="missing-if-branch" title="if path not taken" >I</span>if (typeof superClass !== "function" &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >superClass !== null)</span> { <span class="cstat-no" title="statement not covered" >throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); </span>} subClass.prototype = Object.create(superClass &amp;&amp; superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); <span class="missing-if-branch" title="else path not taken" >E</span>if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : <span class="branch-1 cbranch-no" title="branch not covered" >_defaults(subClass, superClass);</span> }
+&nbsp;
+var tinymce = global.tinymce;
+&nbsp;
+function pluginInitialized() {
+  var ed = tinymce.activeEditor;
+  var plugins = ed &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >ed.plugins;</span>
+  var mention = plugins &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >plugins.mention;</span>
+  return !!mention;
+}
+&nbsp;
+/**
+ * @i18n {zh-CN} 用于tinymce的mention
+ * @i18n {en-US} Mention for Tinymce
+ */
+&nbsp;
+var TinymceMention = function (_BaseEditor) {
+  _inherits(TinymceMention, _BaseEditor);
+&nbsp;
+  function TinymceMention(props) {
+    _classCallCheck(this, TinymceMention);
+&nbsp;
+    var _this = _possibleConstructorReturn(this, _BaseEditor.call(this, props));
+&nbsp;
+    _this.state = {
+      mentionList: [],
+      cursorPosition: {
+        x: 0,
+        y: 0
+      },
+      panelVisible: false,
+      panelIdx: 0
+    };
+    return _this;
+  }
+&nbsp;
+  TinymceMention.prototype.componentWillMount = function componentWillMount() {
+    var _this2 = this;
+&nbsp;
+    <span class="missing-if-branch" title="else path not taken" >E</span>if (!pluginInitialized()) {
+      tinymce.PluginManager.add('mention', function (activeEditor) {
+        _this2.editor = activeEditor;
+        activeEditor.on('keydown', function (e) {
+          _this2.onKeydown(e);
+        });
+        activeEditor.on('keyup', function (e) {
+          _this2.onKeyup(e);
+          _this2.onPanelKeyup(e);
+        });
+      });
+    }
+  };
+&nbsp;
+  TinymceMention.prototype.componentDidMount = function componentDidMount() {
+    this.STORE = {};
+    var container = this._target.parentNode;
+    var mceNode = document.createElement('div');
+    this.mceNode = mceNode;
+    (0, _reactDom.render)(_react2['default'].createElement(
+      'div',
+      null,
+      _react2['default'].Children.map(this.props.children, function (Comp) {
+        var cp = void 0;
+        if (Comp.type.name === 'Tinymce' || Comp.type.displayName === 'Tinymce') {
+          cp = {
+            config: {
+              plugins: ['mention']
+            }
+          };
+        }
+        return _react2['default'].cloneElement(Comp, cp);
+      })
+    ), mceNode);
+    container.insertBefore(mceNode, this._target);
+  };
+&nbsp;
+  TinymceMention.prototype.componentWillUnmount = <span class="fstat-no" title="function not covered" >function componentWillUnmount() {</span>
+<span class="cstat-no" title="statement not covered" >    var container = this._target.parentNode;</span>
+<span class="cstat-no" title="statement not covered" >    container.removeChild(this.mceNode);</span>
+  };
+&nbsp;
+  TinymceMention.prototype.onKeydown = function onKeydown(e) {
+    var panelVisible = this.state.panelVisible;
+&nbsp;
+    switch (e.keyCode) {
+<span class="branch-0 cbranch-no" title="branch not covered" >      case _keycode.KEYCODE.UP:</span>
+      case _keycode.KEYCODE.DOWN:
+        <span class="missing-if-branch" title="else path not taken" >E</span>if (panelVisible) {
+          e.preventDefault();
+        }
+        break;
+      case _keycode.KEYCODE.ENTER:
+        <span class="missing-if-branch" title="else path not taken" >E</span>if (panelVisible) {
+          e.preventDefault();
+        }
+        break;
+      default:
+        break;
+    }
+  };
+&nbsp;
+  TinymceMention.prototype.onKeyup = function onKeyup(e) {
+    var panelVisible = this.state.panelVisible;
+&nbsp;
+    switch (e.keyCode) {
+<span class="branch-0 cbranch-no" title="branch not covered" >      case _keycode.KEYCODE.UP:</span>
+      case _keycode.KEYCODE.DOWN:
+        <span class="missing-if-branch" title="else path not taken" >E</span>if (panelVisible) {
+          e.preventDefault();
+        }
+        break;
+      case _keycode.KEYCODE.ENTER:
+        break;
+      default:
+        this.handleDefaultKeyup();
+        break;
+    }
+  };
+&nbsp;
+  TinymceMention.prototype.handleDefaultKeyup = function handleDefaultKeyup() {
+    var delimiter = this.props.delimiter;
+&nbsp;
+    var sel = this.editor.selection;
+    var range = sel.getRng(true);
+    <span class="missing-if-branch" title="else path not taken" >E</span>if (range.commonAncestorContainer.nodeType === 3) {
+      var cloneRange = range.cloneRange();
+      cloneRange.setStart(range.commonAncestorContainer, 0);
+      var originStr = cloneRange.toString();
+      var str = (0, _util.parseStrByDelimiter)(originStr, delimiter);
+      this.runMatcher(str);
+      <span class="missing-if-branch" title="else path not taken" >E</span>if (str !== false) {
+        <span class="missing-if-branch" title="else path not taken" >E</span>if ('createRange' in document) {
+          range.setStart(range.commonAncestorContainer, originStr.length - str.length - 1);
+          var rect = range.getBoundingClientRect();
+          this.setPanelPos({
+            left: rect.right,
+            top: rect.bottom
+          });
+          sel.setRng(range);
+          // save range position
+          this.STORE.bookmark = sel.getBookmark(3);
+        } else {
+          // IE8
+<span class="cstat-no" title="statement not covered" >          var internalRange = sel.getRng();</span>
+<span class="cstat-no" title="statement not covered" >          this.setPanelPos({</span>
+            left: internalRange.boundingLeft,
+            top: internalRange.boundingTop
+          });
+<span class="cstat-no" title="statement not covered" >          this.STORE.bookmark = str.length + 1;</span>
+        }
+        sel.collapse();
+      }
+    }
+  };
+&nbsp;
+  TinymceMention.prototype.insert = function insert(mentionContent) {
+    var insertMode = this.props.insertMode;
+&nbsp;
+    switch (insertMode) {
+      case 'TEXT_NODE':
+        this.insertWithTextNode(mentionContent);
+        break;
+      case 'ELEMENT_NODE':
+      default:
+        this.insertWithElementNode(mentionContent);
+        break;
+    }
+  };
+&nbsp;
+  TinymceMention.prototype.insertWithElementNode = function insertWithElementNode(mentionContent) {
+    var sel = this.editor.selection;
+    <span class="missing-if-branch" title="else path not taken" >E</span>if (this.STORE.bookmark) {
+      sel.moveToBookmark(this.STORE.bookmark);
+    }
+    var range = sel.getRng(true);
+    var mentionNode = document.createElement('input');
+    mentionNode.setAttribute('type', 'button');
+    mentionNode.setAttribute('tabindex', '-1');
+    mentionNode.className = this.props.prefixCls + '-node';
+    mentionNode.value = mentionContent;
+    range.deleteContents();
+    sel.setNode(mentionNode);
+    range.collapse();
+    this.editor.focus();
+  };
+&nbsp;
+  TinymceMention.prototype.insertWithTextNode = function insertWithTextNode(mentionContent) {
+    var sel = this.editor.selection;
+    <span class="missing-if-branch" title="else path not taken" >E</span>if (this.STORE.bookmark) {
+      <span class="missing-if-branch" title="else path not taken" >E</span>if ('createRange' in document) {
+        sel.moveToBookmark(this.STORE.bookmark);
+        var range = sel.getRng(true);
+        range.deleteContents();
+        sel.setContent(mentionContent);
+        range.collapse();
+        this.editor.focus();
+      } else {
+<span class="cstat-no" title="statement not covered" >        var internalRange = sel.getRng();</span>
+<span class="cstat-no" title="statement not covered" >        internalRange.moveStart('character', -this.STORE.bookmark);</span>
+<span class="cstat-no" title="statement not covered" >        internalRange.pasteHTML(mentionContent);</span>
+      }
+    }
+  };
+&nbsp;
+  TinymceMention.prototype.setPanelPos = function setPanelPos(pos) {
+    var editorOffset = this.editor.contentAreaContainer.getBoundingClientRect();
+    // const offset = getScrollOffset();
+    var position = {
+      x: pos.left + editorOffset.left,
+      y: pos.top + editorOffset.top
+    };
+    this.setState({
+      cursorPosition: position
+    });
+  };
+&nbsp;
+  TinymceMention.prototype.selectItem = function selectItem(data) {
+    this.insertMentionData(data);
+    this.setState({
+      mentionList: []
+    });
+  };
+&nbsp;
+  TinymceMention.prototype.render = function render() {
+    var _this3 = this;
+&nbsp;
+    var panelPosition = {
+      left: this.state.cursorPosition.x,
+      top: this.state.cursorPosition.y
+    };
+    var _props = this.props,
+        prefixCls = _props.prefixCls,
+        panelFormatter = _props.panelFormatter;
+&nbsp;
+    return _react2['default'].createElement(
+      'div',
+      { ref: function ref(el) {
+          return _this3._target = el;
+        } },
+      _react2['default'].createElement(_Panel2['default'], {
+        prefixCls: prefixCls,
+        visible: this.state.panelVisible,
+        idx: this.state.panelIdx,
+        list: this.state.mentionList,
+        onSelect: this.selectItem.bind(this),
+        formatter: panelFormatter,
+        style: panelPosition
+      })
+    );
+  };
+&nbsp;
+  return TinymceMention;
+}(_baseEditor2['default']);
+&nbsp;
+TinymceMention.displayName = 'TinymceMention';
+TinymceMention.propTypes = {
+  /**
+   * @i18n {zh-CN} class前缀
+   * @i18n {en-US} class prefix
+   */
+  prefixCls: _propTypes2['default'].string,
+  /**
+   * @i18n {zh-CN} 定义数据源
+   * @i18n {en-US} data source for mention content
+   */
+  source: _propTypes2['default'].oneOfType([_propTypes2['default'].array, _propTypes2['default'].func]),
+  /**
+   * @i18n {zh-CN} 数据源查询延时
+   * @i18n {en-US} debounce of the request to data source
+   */
+  delay: _propTypes2['default'].number,
+  /**
+   * @i18n {zh-CN} 匹配字符区间
+   * @i18n {en-US} only match the string after delimiter which the length in this range
+   */
+  matchRange: _propTypes2['default'].arrayOf(_propTypes2['default'].number),
+  /**
+   * @i18n {zh-CN} 数据源格式化匹配
+   * @i18n {en-US} format the data form source
+   */
+  formatter: _propTypes2['default'].func,
+  /**
+   * @i18n {zh-CN} 自定义插入的mention内容
+   * @i18n {en-US} customize the insert content with this function | function
+   */
+  mentionFormatter: _propTypes2['default'].func,
+  /**
+   * @i18n {zh-CN} 自定义选择列表
+   * @i18n {en-US} customize the panel display
+   */
+  panelFormatter: _propTypes2['default'].func,
+  /**
+   * @i18n {zh-CN} 发生变化后的触发
+   * @i18n {en-US} trigger when editor content change
+   * @param {data} xxxxxx
+   */
+  onChange: _propTypes2['default'].func,
+  /**
+   * @i18n {zh-CN} 添加mention后触发
+   * @i18n {en-US} Callback invoked when a mention has been added
+   */
+  onAdd: _propTypes2['default'].func,
+  /**
+   * @i18n {zh-CN} `ELEMENT_NODE` 插入button, `TEXT_NODE` 插入纯字符串
+   * @i18n {en-US} `ELEMENT_NODE` will insert mention content with a button, `TEXT_NODE` will insert with a text node
+   */
+  insertMode: _propTypes2['default'].oneOf(['ELEMENT_NODE', 'TEXT_NODE'])
+};
+TinymceMention.defaultProps = {
+  prefixCls: 'kuma-mention',
+  source: [],
+  delay: 100,
+  matchRange: [2, 8],
+  formatter: <span class="fstat-no" title="function not covered" >function formatter(data) {</span>
+<span class="cstat-no" title="statement not covered" >    return data;</span>
+  },
+  mentionFormatter: function mentionFormatter(data) {
+    return '@' + data.text;
+  },
+  panelFormatter: function panelFormatter(data) {
+    return '' + data.text;
+  },
+  onChange: <span class="fstat-no" title="function not covered" >function onChange() {</span>},
+  onAdd: function onAdd() {},
+  insertMode: 'ELEMENT_NODE'
+};
+&nbsp;
+&nbsp;
+(0, _reactMixin2['default'])(TinymceMention.prototype, _mentionMixin2['default']);
+&nbsp;
+exports['default'] = TinymceMention;
+module.exports = exports['default'];
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue May 29 2018 17:37:41 GMT+0800 (CST)
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>

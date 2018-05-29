@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Code coverage report for src/editor-components/textareaEditor.js</title>
+    <title>Code coverage report for src/editor-components/inputEditor.jsx</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../prettify.css" />
     <link rel="stylesheet" href="../../base.css" />
@@ -16,28 +16,28 @@
 <div class='wrapper'>
   <div class='pad1'>
     <h1>
-      <a href="../../index.html">all files</a> / <a href="index.html">src/editor-components/</a> textareaEditor.js
+      <a href="../../index.html">all files</a> / <a href="index.html">src/editor-components/</a> inputEditor.jsx
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">69.57% </span>
+        <span class="strong">75.73% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>64/92</span>
+        <span class='fraction'>78/103</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">52.5% </span>
+        <span class="strong">50% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>21/40</span>
+        <span class='fraction'>23/46</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">70.59% </span>
+        <span class="strong">89.47% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>12/17</span>
+        <span class='fraction'>17/19</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">67.57% </span>
+        <span class="strong">88.61% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>50/74</span>
+        <span class='fraction'>70/79</span>
       </div>
     </div>
   </div>
@@ -275,7 +275,25 @@
 230
 231
 232
-233</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+248
+249
+250
+251</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1×</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -290,136 +308,231 @@
 <span class="cline-any cline-yes">1×</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">23×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">38×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">38×</span>
+<span class="cline-any cline-yes">38×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">38×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">38×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">68×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2×</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">5×</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1×</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1×</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1×</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1×</span>
-<span class="cline-any cline-yes">1×</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1×</span>
-<span class="cline-any cline-yes">1×</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1×</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1×</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1×</span>
-<span class="cline-any cline-yes">1×</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1×</span>
-<span class="cline-any cline-yes">1×</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1×</span>
-<span class="cline-any cline-yes">1×</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1×</span>
-<span class="cline-any cline-yes">1×</span>
-<span class="cline-any cline-yes">1×</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1×</span>
-<span class="cline-any cline-yes">1×</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1×</span>
-<span class="cline-any cline-yes">1×</span>
-<span class="cline-any cline-yes">1×</span>
-<span class="cline-any cline-yes">1×</span>
-<span class="cline-any cline-yes">1×</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1×</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1×</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1×</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1×</span>
-<span class="cline-any cline-yes">1×</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1×</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1×</span>
-<span class="cline-any cline-yes">3×</span>
-<span class="cline-any cline-yes">3×</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3×</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3×</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -429,83 +542,6 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1×</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1×</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1×</span>
-<span class="cline-any cline-yes">1×</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1×</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1×</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">'use strict';
 &nbsp;
@@ -513,9 +549,15 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 &nbsp;
+var _extends = Object.assign || <span class="fstat-no" title="function not covered" ><span class="branch-1 cbranch-no" title="branch not covered" >function (target) {</span> <span class="cstat-no" title="statement not covered" >for (var i = 1; i &lt; arguments.length; i++) { <span class="cstat-no" title="statement not covered" >var source = arguments[i]; <span class="cstat-no" title="statement not covered" ></span>for (var key in source) { <span class="cstat-no" title="statement not covered" >if (Object.prototype.hasOwnProperty.call(source, key)) { <span class="cstat-no" title="statement not covered" >target[key] = source[key]; </span>} </span>} </span>} <span class="cstat-no" title="statement not covered" ></span>return target; </span>};</span>
+&nbsp;
 var _react = require('react');
 &nbsp;
 var _react2 = _interopRequireDefault(_react);
+&nbsp;
+var _propTypes = require('prop-types');
+&nbsp;
+var _propTypes2 = _interopRequireDefault(_propTypes);
 &nbsp;
 var _baseEditor = require('./baseEditor');
 &nbsp;
@@ -525,23 +567,23 @@ var _util = require('../utils/util');
 &nbsp;
 function _interopRequireDefault(obj) { return obj &amp;&amp; obj.__esModule ? <span class="branch-0 cbranch-no" title="branch not covered" >obj </span>: { 'default': obj }; }
 &nbsp;
-function _defaults(obj, defaults) { var keys = Object.getOwnPropertyNames(defaults); for (var i = 0; i &lt; keys.length; i++) { var key = keys[i]; var value = Object.getOwnPropertyDescriptor(defaults, key); <span class="missing-if-branch" title="if path not taken" >I</span>if (value &amp;&amp; value.configurable &amp;&amp; <span class="branch-2 cbranch-no" title="branch not covered" >obj[key] === undefined)</span> { <span class="cstat-no" title="statement not covered" >Object.defineProperty(obj, key, value); </span>} } return obj; }
+<span class="fstat-no" title="function not covered" >function _defaults(obj, defaults) {</span> <span class="cstat-no" title="statement not covered" >var keys = Object.getOwnPropertyNames(defaults); <span class="cstat-no" title="statement not covered" ></span>for (var i = 0; i &lt; keys.length; i++) { <span class="cstat-no" title="statement not covered" >var key = keys[i]; <span class="cstat-no" title="statement not covered" ></span>var value = Object.getOwnPropertyDescriptor(defaults, key); <span class="cstat-no" title="statement not covered" ></span>if (value &amp;&amp; value.configurable &amp;&amp; obj[key] === undefined) { <span class="cstat-no" title="statement not covered" >Object.defineProperty(obj, key, value); </span>} </span>} <span class="cstat-no" title="statement not covered" ></span>return obj; </span>}
 &nbsp;
 function _classCallCheck(instance, Constructor) { <span class="missing-if-branch" title="if path not taken" >I</span>if (!(instance instanceof Constructor)) { <span class="cstat-no" title="statement not covered" >throw new TypeError("Cannot call a class as a function"); </span>} }
 &nbsp;
 function _possibleConstructorReturn(self, call) { <span class="missing-if-branch" title="if path not taken" >I</span>if (!self) { <span class="cstat-no" title="statement not covered" >throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); </span>} return call &amp;&amp; (typeof call === "object" || <span class="branch-2 cbranch-no" title="branch not covered" >typeof call === "function")</span> ? call : <span class="branch-1 cbranch-no" title="branch not covered" >self;</span> }
 &nbsp;
-function _inherits(subClass, superClass) { <span class="missing-if-branch" title="if path not taken" >I</span>if (typeof superClass !== "function" &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >superClass !== null)</span> { <span class="cstat-no" title="statement not covered" >throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); </span>} subClass.prototype = Object.create(superClass &amp;&amp; superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); <span class="missing-if-branch" title="else path not taken" >E</span>if (superClass) Object.setPrototypeOf ? <span class="branch-0 cbranch-no" title="branch not covered" >Object.setPrototypeOf(subClass, superClass) </span>: _defaults(subClass, superClass); }
+function _inherits(subClass, superClass) { <span class="missing-if-branch" title="if path not taken" >I</span>if (typeof superClass !== "function" &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >superClass !== null)</span> { <span class="cstat-no" title="statement not covered" >throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); </span>} subClass.prototype = Object.create(superClass &amp;&amp; superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); <span class="missing-if-branch" title="else path not taken" >E</span>if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : <span class="branch-1 cbranch-no" title="branch not covered" >_defaults(subClass, superClass);</span> }
 &nbsp;
 /**
- * @i18n {zh-CN} textarea中使用mention
- * @i18n {en-US} mention in textarea
+ * @i18n {zh-CN} input中使用mention
+ * @i18n {en-US} mention in input
  */
-var TextareaEditor = function (_BaseEditor) {
-  _inherits(TextareaEditor, _BaseEditor);
+var InputEditor = function (_BaseEditor) {
+  _inherits(InputEditor, _BaseEditor);
 &nbsp;
-  function TextareaEditor(props) {
-    _classCallCheck(this, TextareaEditor);
+  function InputEditor(props) {
+    _classCallCheck(this, InputEditor);
 &nbsp;
     var _this = _possibleConstructorReturn(this, _BaseEditor.call(this, props));
 &nbsp;
@@ -552,23 +594,23 @@ var TextareaEditor = function (_BaseEditor) {
     return _this;
   }
 &nbsp;
-  TextareaEditor.prototype.componentWillReceiveProps = function componentWillReceiveProps(nextProps) {
-    <span class="missing-if-branch" title="if path not taken" >I</span>if (nextProps.value !== this.props.value) {
-<span class="cstat-no" title="statement not covered" >      this.setState({</span>
+  InputEditor.prototype.componentWillReceiveProps = function componentWillReceiveProps(nextProps) {
+    if (nextProps.value !== this.props.value) {
+      this.setState({
         value: nextProps.value
       });
     }
   };
 &nbsp;
-  TextareaEditor.prototype.componentDidMount = function componentDidMount() {
+  InputEditor.prototype.componentDidMount = function componentDidMount() {
     this.selectionPosition = {
       start: 0,
       end: 0
     };
   };
 &nbsp;
-  TextareaEditor.prototype.handleDefaultKeyup = function handleDefaultKeyup() {
-    var editor = this.refs.editor;
+  InputEditor.prototype.handleDefaultKeyup = function handleDefaultKeyup() {
+    var editor = this.editor;
     var delimiter = this.props.delimiter;
 &nbsp;
     var offset = (0, _util.getCaretOffset)(editor);
@@ -582,23 +624,22 @@ var TextareaEditor = function (_BaseEditor) {
       start: offset.start - str.length - 1,
       end: offset.end
     };
-    <span class="missing-if-branch" title="if path not taken" >I</span>if (str !== false) {
-<span class="cstat-no" title="statement not covered" >      var position = (0, _util.getCaretPosition)(editor);</span>
-<span class="cstat-no" title="statement not covered" >      this.props.setCursorPos({</span>
+    <span class="missing-if-branch" title="else path not taken" >E</span>if (str !== false) {
+      var position = (0, _util.getCaretPosition)(editor);
+      this.props.setCursorPos({
         x: position.left,
         y: position.top
       });
     }
   };
 &nbsp;
-  TextareaEditor.prototype.insert = <span class="fstat-no" title="function not covered" >function insert(mentionContent) {</span>
-<span class="cstat-no" title="statement not covered" >    this.insertContentAtCaret(mentionContent);</span>
+  InputEditor.prototype.insert = function insert(mentionContent) {
+    this.insertContentAtCaret(mentionContent);
   };
 &nbsp;
-  TextareaEditor.prototype.insertContentAtCaret = <span class="fstat-no" title="function not covered" >function insertContentAtCaret(text) {</span>
-<span class="cstat-no" title="statement not covered" >    var editor = this.refs.editor;</span>
-&nbsp;
-<span class="cstat-no" title="statement not covered" >    if (document.selection) {</span>
+  InputEditor.prototype.insertContentAtCaret = function insertContentAtCaret(text) {
+    var editor = this.editor;
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (document.selection) {
 <span class="cstat-no" title="statement not covered" >      editor.focus();</span>
 <span class="cstat-no" title="statement not covered" >      if (editor.createTextRange) {</span>
 <span class="cstat-no" title="statement not covered" >        var range = editor.createTextRange();</span>
@@ -610,33 +651,39 @@ var TextareaEditor = function (_BaseEditor) {
 <span class="cstat-no" title="statement not covered" >        editor.setSelectionRange(this.selectionPosition.start, this.selectionPosition.end);</span>
       }
     } else {
-<span class="cstat-no" title="statement not covered" >      var scrollTop = editor.scrollTop;</span>
-<span class="cstat-no" title="statement not covered" >      var value = this.state.value;</span>
+      var scrollTop = editor.scrollTop;
+      var value = this.state.value;
+      // editor.value = editor.value.substring(0, this.selectionPosition.start) +
+      //   text +
+      //   editor.value.substring(this.selectionPosition.end, editor.value.length);
 &nbsp;
-<span class="cstat-no" title="statement not covered" >      value = value.substring(0, this.selectionPosition.start) + text + value.substring(this.selectionPosition.end, value.length);</span>
-<span class="cstat-no" title="statement not covered" >      this.setState({</span>
+      value = value.substring(0, this.selectionPosition.start) + text + value.substring(this.selectionPosition.end, editor.value.length);
+      this.setState({
         value: value
-      }, <span class="fstat-no" title="function not covered" >function () {</span>
-<span class="cstat-no" title="statement not covered" >        editor.focus();</span>
-<span class="cstat-no" title="statement not covered" >        editor.scrollTop = scrollTop;</span>
+      }, function () {
+        editor.focus();
+        editor.scrollTop = scrollTop;
       });
     }
-<span class="cstat-no" title="statement not covered" >    var changeEvt = (0, _util.createEvent)(editor, 'change');</span>
-<span class="cstat-no" title="statement not covered" >    this.props.onChange(changeEvt, this.state.value);</span>
+    var changeEvt = (0, _util.createEvent)(editor, 'change');
+    this.props.onChange(changeEvt, this.state.value);
   };
 &nbsp;
-  TextareaEditor.prototype.handleChange = function handleChange(e) {
+  InputEditor.prototype.handleChange = function handleChange(e) {
     this.setState({
       value: e.target.value
     });
-    this.props.onChange(e, this.state.value);
+    this.props.onChange(e, e.target.value);
   };
 &nbsp;
-  TextareaEditor.prototype.render = function render() {
+  InputEditor.prototype.render = function render() {
+    var _this2 = this;
+&nbsp;
     var value = this.state.value;
     var _props = this.props,
         readOnly = _props.readOnly,
-        placeholder = _props.placeholder;
+        placeholder = _props.placeholder,
+        maxLength = _props.maxLength;
 &nbsp;
     var style = {
       width: this.props.width,
@@ -645,53 +692,53 @@ var TextareaEditor = function (_BaseEditor) {
     return _react2['default'].createElement(
       'div',
       { className: this.props.prefixCls },
-      _react2['default'].createElement('textarea', {
-        ref: 'editor',
-        className: this.props.prefixCls + '-editor kuma-textarea',
+      _react2['default'].createElement('input', _extends({}, Number(maxLength) &gt; 0 ? { maxLength: maxLength } : {}, {
+        className: this.props.prefixCls + '-editor kuma-input',
+        ref: function ref(el) {
+          return _this2.editor = el;
+        },
         style: style,
         readOnly: readOnly,
         placeholder: placeholder,
+        onChange: this.handleChange,
         onKeyDown: this.onKeydown.bind(this),
         onKeyUp: this.onKeyup.bind(this),
         onFocus: this.onFocus.bind(this),
-        onChange: this.handleChange,
         value: value
-      })
+      }))
     );
   };
 &nbsp;
-  return TextareaEditor;
+  return InputEditor;
 }(_baseEditor2['default']);
 &nbsp;
-exports['default'] = TextareaEditor;
-&nbsp;
-TextareaEditor.displayName = 'TextareaEditor';
-TextareaEditor.propTypes = {
+InputEditor.displayName = 'InputEditor';
+InputEditor.propTypes = {
   /**
    * @i18n {zh-CN} class前缀
    * @i18n {en-US} class prefix
    */
-  prefixCls: _react2['default'].PropTypes.string,
+  prefixCls: _propTypes2['default'].string,
   /**
    * @i18n {zh-CN} 编辑区域宽度
    * @i18n {en-US} editor's width
    */
-  width: _react2['default'].PropTypes.oneOfType([_react2['default'].PropTypes.number, _react2['default'].PropTypes.string]),
+  width: _propTypes2['default'].oneOfType([_propTypes2['default'].number, _propTypes2['default'].string]),
   /**
    * @i18n {zh-CN} 编辑区域高度
    * @i18n {en-US} editor's height
    */
-  height: _react2['default'].PropTypes.number,
+  height: _propTypes2['default'].number,
   /**
    * @i18n {zh-CN} placeholder
    * @i18n {en-US} placeholder
    */
-  placeholder: _react2['default'].PropTypes.string,
+  placeholder: _propTypes2['default'].string,
   /**
    * @i18n {zh-CN} 自定义插入的mention内容
    * @i18n {en-US} customize the insert content with this function | function
    */
-  mentionFormatter: _react2['default'].PropTypes.func,
+  mentionFormatter: _propTypes2['default'].func,
   /**
    * @i18n {zh-CN} 发生变化后的触发
    * @i18n {en-US} trigger when editor content change
@@ -701,43 +748,50 @@ TextareaEditor.propTypes = {
    * @i18n {zh-CN} 添加mention后触发
    * @i18n {en-US} Callback invoked when a mention has been added
    */
-  onAdd: _react2['default'].PropTypes.func,
+  onAdd: _propTypes2['default'].func,
   /**
    * @i18n {zh-CN} 默认内容
    * @i18n {en-US} default value
    */
-  defaultValue: _react2['default'].PropTypes.string,
+  defaultValue: _propTypes2['default'].string,
   /**
    * @i18n {zh-CN} 内容
    * @i18n {en-US} value
    */
-  value: _react2['default'].PropTypes.string,
+  value: _propTypes2['default'].string,
   /**
    * @i18n {zh-CN} 只读
    * @i18n {en-US} read only
    */
-  readOnly: _react2['default'].PropTypes.bool,
+  readOnly: _propTypes2['default'].bool,
   /**
    * @i18n {zh-CN} 触发字符
    * @i18n {en-US} Defines the char sequence upon which to trigger querying the data source
    */
-  delimiter: _react2['default'].PropTypes.string
+  delimiter: _propTypes2['default'].string,
+  /**
+   * @i18n {zh-CN} 最大长度
+   * @i18n {en-US} max length of content
+   */
+  maxLength: _propTypes2['default'].number
 };
-TextareaEditor.defaultProps = {
+InputEditor.defaultProps = {
   prefixCls: '',
   width: 200,
-  height: 100,
+  height: 30,
   placeholder: '',
-  mentionFormatter: <span class="fstat-no" title="function not covered" >function mentionFormatter(data) {</span>
-<span class="cstat-no" title="statement not covered" >    return ' @' + data.text + ' ';</span>
+  mentionFormatter: function mentionFormatter(data) {
+    return ' @' + data.text + ' ';
   },
   // onChange: () =&gt; {},
-  onAdd: <span class="fstat-no" title="function not covered" >function onAdd() {</span>},
+  onAdd: function onAdd() {},
   defaultValue: '',
   readOnly: false,
   delimiter: '@',
-  value: ''
+  value: '',
+  maxLength: -1
 };
+exports['default'] = InputEditor;
 module.exports = exports['default'];
 &nbsp;</pre></td></tr>
 </table></pre>
@@ -745,7 +799,7 @@ module.exports = exports['default'];
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Mon Jul 31 2017 16:18:18 GMT+0800 (CST)
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue May 29 2018 17:37:41 GMT+0800 (CST)
 </div>
 </div>
 <script src="../../prettify.js"></script>

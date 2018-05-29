@@ -69,6 +69,11 @@ export default class InputEditor extends BaseEditor {
      * @i18n {en-US} Defines the char sequence upon which to trigger querying the data source
      */
     delimiter: PropTypes.string,
+    /**
+     * @i18n {zh-CN} 最大长度
+     * @i18n {en-US} max length of content
+     */
+    maxLength: PropTypes.number,
   };
   static defaultProps = {
     prefixCls: '',
@@ -82,6 +87,7 @@ export default class InputEditor extends BaseEditor {
     readOnly: false,
     delimiter: '@',
     value: '',
+    maxLength: -1,
   };
 
   constructor(props) {
@@ -168,7 +174,7 @@ export default class InputEditor extends BaseEditor {
   }
   render() {
     const { value } = this.state;
-    const { readOnly, placeholder } = this.props;
+    const { readOnly, placeholder, maxLength } = this.props;
     let style = {
       width: this.props.width,
       height: this.props.height,
@@ -176,6 +182,7 @@ export default class InputEditor extends BaseEditor {
     return (
       <div className={this.props.prefixCls}>
         <input
+          { ...(Number(maxLength) > 0 ? { maxLength } : {}) }
           className={`${this.props.prefixCls}-editor kuma-input`}
           ref={el => (this.editor = el)}
           style={style}
